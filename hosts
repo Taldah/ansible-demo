@@ -1,0 +1,12 @@
+[servers]
+node1
+
+
+[servers:vars]
+my_variable = "ayala"
+
+[apps]
+
+node2
+[apps:vars]
+my_variable = "noa"

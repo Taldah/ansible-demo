@@ -1,0 +1,8 @@
+---
+- name: Install vim on servers
+  hosts: servers
+  remote_user: root
+  tasks:
+    - name: Include task list in play
+      ansible.builtin.include_tasks:
+        file: taskapp.yml

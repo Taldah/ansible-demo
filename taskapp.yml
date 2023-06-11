@@ -1,0 +1,8 @@
+ - name: Install zip
+   ansible.builtin.apt:
+      name: zip
+      state: present
+ - name: Install vim
+   ansible.builtin.apt:
+      name: vim
+      state: present

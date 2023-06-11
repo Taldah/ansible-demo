@@ -1,0 +1,6 @@
+- name: install vim & zip
+  ansible.builtin.apt: name=vim,zip state=present
+
+
+- name: Copy tal.txt
+  ansible.builtin.copy: src=tal.txt dest=/tmp
