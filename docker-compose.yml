@@ -1,0 +1,29 @@
+version: '3.7'
+
+services:
+  ansibel-main:
+    build: 
+      dockerfile: ./Dockerfile
+    command: ["sleep", "100000"]
+    image: ansible
+    #restart: unless-stopped
+ #   networks:
+ #      - ansible-net
+      
+  
+  node1:
+    build: 
+      dockerfile: ./Dockerfile1
+    image: ansible-worker
+    #restart: unless-stopped
+#    networks:
+#        - ansible-net
+      
+#networks:
+#    ansible-net: 
+  node2:
+    build: 
+      dockerfile: ./Docker_node2
+    image: ansible-worker     
+
+
