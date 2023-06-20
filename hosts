@@ -6,7 +6,7 @@ node1
 my_variable = "ayala"
 
 [apps]
-
 node2
+
 [apps:vars]
 my_variable = "noa"

@@ -1,0 +1,13 @@
+---
+- hosts: servers apps
+  serial: 1
+    #  vars:
+    # - my_variable: "achiya david"
+  tasks: 
+
+
+  - name: Template a file to another place
+    ansible.builtin.template:
+      src: tal_hostname.j2
+      dest: /root/hostname.conf
+#  when: ansible_distribution == "Debian"
